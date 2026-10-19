@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="utskrift"></p>
+<script>
+const dyr = ["Papegøye", "Katt", "Panda", "Lemur", "Antilope", "Hund", "Zebra", "Isbjørn", "Ugle", "Hai"]
+
+dyr.push("Elg", "Flodhest")
+
+dyr.sort()
+
+const antallDyr = dyr.length
+
+const setning = `Antall dyr: ${antallDyr}.`
+
+const setningToString = `Antall dyr: ${antallDyr}. ${dyr.toString()}`
+console.log("Antall dyr: ")
+console.log(setningToString)
+
+document.getElementById("utskrift").innerHTML = setningToString
+
+
+</script>
+</body>
+</html>
+
